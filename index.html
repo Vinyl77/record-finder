@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <title>Record Finder</title>
+
+<body>
+    <header class="p-0">
+        <div class="border-r shadow p-5 bg-green-500">
+            <h1 class="text-center text-3xl text-gray-600 logo">Archive Record Finder</h1>
+        </div>
+    </header>
+    <main class="container px-4 flex-grow">
+        <div class="p-10 mr-20">
+            <form id="record-form">
+            <h2 class="text-left text-3xl text-gray-600">Find Some Records:</h2>
+                <div class="relative">
+                    <input class="w-full h-10 pl-3 pr-5 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+                        placeholder="Search Records Here" id="record-search" />
+                    <button
+                        class="absolute inset-y-0 right-0 flex items-center px-4 font-bold text-white bg-green-500 rounded-r-lg" type="submit" id="fetch-button">Click</button>
+                </div>
+            </form>
+            <ul id ="searchList" class="list-none">
+           
+            </ul>
+        </div>
+        
+        <div class="p-10 mr-20">
+            <h2 class="subtitle">Showing Search Results:<span id="record-search-term"></span></h2>
+            <div id="results-container" class="list-none">
+                 
+                <ul id ="searcher" class="list-none">
+             
+                </ul>
+                
+            </div>
+    
+        </div>
+    </main>
+    <div>
+        <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded m-20" id= "clear">Clear History</button>
+
+    </div>
+
+    
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="./assets/script.js"></script>
+    
+</body>
+</html>
